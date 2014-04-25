@@ -32,6 +32,12 @@ h2 {
 	color: #56BF83;
 }
 
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 nav {
 	position: fixed;
 	z-index: 99;
@@ -41,7 +47,7 @@ nav {
 
 }
 
-ul {
+nav ul {
 	list-style: none;
 	text-align: center;
 	margin:0;
@@ -51,10 +57,10 @@ ul {
 	
 }
 
-ul li {
+nav ul li {
 	display: inline;
 }
-ul li a {
+nav ul li a {
 	float: left;
 	text-decoration: none;
 	width: 10%;
@@ -64,7 +70,7 @@ ul li a {
 	letter-spacing: 1px;
 }
 
-ul li:first-child a {
+nav ul li:first-child a {
 	background-color: #2ecc71;
 	margin-left: 5%;
 	width: 15%;
@@ -73,55 +79,160 @@ ul li:first-child a {
 	font-size: 30px;
 }
 
-ul a {
+nav ul li:first-child a:hover {
+	/*box-shadow: 10px 10px 5px darkgreen;*/
+}
+
+nav ul a {
 	padding: 10px 0;
 	border-right:1px solid white;
 }
-
-ul 
 
 .content {
 	width: 100%;
 	text-align: center;
 }
+
 .homesplash,
 .about,
 .skills,
 .contact {
-	height: 600px;
+	min-height: 500px;
 	padding: 1px; /*force sections to align*/
 	padding-top: 40px; /*sit above the nav */
 }
 
-
-.homesplash {
-	height: 600px;
+.homesplash{
+	background-image: url(../media/cheeseburger.jpg);
+	background-size: cover;
 }
 
-.homesplash,
+/*.homesplash,*/
 .skills {
 	background-image: url(../media/fabric_plaid.png);
 	background-repeat: repeat;
 }
 
+.homesplash {
+	height: 600px;
+
+}
+
 .homesplash h2 {
-	margin-top: 250px;
+	padding: 5% 0;
+	background-color: rgba(255,255,255,0.5);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	margin: 15%;
+	
 }
 
 .about,
 .contact,
-ul {
+nav ul {
 	background: url(../media/darkdenim3.png);
 }
+.about {
+	position: relative;
+}
 
-.skills {
-	
+.about img{
+	width: 200px;
+	border-radius: 100px;
+	border: 10px solid white;	
+	margin: 25px 0;
+}
+
+.about a {
+	display: block;
+	/*font-weight: 600;*/
+	color: #2ecc71;
 }
 
 
-.contact {
-	
+.about p{
+	color: white;
+	width:40%;
+	margin-left: 30%;
+	text-align: center;
+	line-height: 1.5rem;
 }
+
+p + p {
+	margin-bottom: 75px;
+}
+
+.skills,
+li {
+	font-weight: 600;
+}
+
+.dev,
+.design,
+.tools {
+	float: left;
+	width: 33%;
+}
+
+
+
+.dev-icon,
+.design-icon,
+.tools-icon {
+	margin: 25px 0;
+
+}
+
+.design-icon {
+	left: 15px;
+	position: relative;
+}
+.wrapper {
+	max-width: 800px;
+	margin: 25px auto;
+}
+
+form {
+	width: 75%;
+	display: block;
+	position: relative;
+	left: 12.5%;
+}
+
+input,
+textarea {
+
+	line-height: 2rem;
+	width: 100%;
+	font-size: 1.2rem;
+	padding: 5px;
+	margin: 8px auto;
+
+}
+
+input {
+
+}
+
+textarea {
+	height: 200px;
+	resize: none;
+	maxlength: 5000;
+}
+
+input + input + input { 
+	margin-bottom: 20px;
+}
+
+.contactsubmit {
+	font-size: 1.5rem;
+	padding: 10px;
+	border-radius: 0;
+	background: #2ecc71;
+	border: 0;
+	color: white;
+	margin-bottom: 100px;
+}
+
 
 footer {
 	height: 100px;
@@ -130,12 +241,43 @@ footer {
 	padding-top: 10px;
 }
 
+footer a {
+	
+}
+
 /*SVG INFO*/
 
-.custom-icon{
-	width: 80px;
-	height: 80px;
+.custom-icon {
+	position: relative;
+	margin: 20px 10px 0 10px;
+	width: 50px;
+	height: 50px;
 
 }
 
+.inner-shape{
+	fill: #2ecc71;
+}
+
+
+/*feedback
+
+nav bar needs hover effect + < >
+
+explore chat bubble for right button OR 3 Social Nav icons
+
+background for homepage...
+
+about needs consistent space between elements
+
+smaller picture
+
+implement icons for skills
+
+Social media icons need to be smaller, remove garbage ones
+
+
+
+
+*/
 

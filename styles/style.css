@@ -178,8 +178,8 @@ nav ul {
 }
 
 /*hit bottom paragraph*/
-p + p + p {
-	margin-bottom: 75px;
+p + p + p  {
+	margin: 25px 0 75px 0;
 }
 
 .skills,

@@ -81,9 +81,9 @@ nav ul li:first-child a {
 	margin-left: 5%;
 	width: 15%;
 	border: none;
-	
-	padding: 0;
-	font-size: 38px;
+	vertical-align: top;
+	padding: 2px 0;
+	font-size: 32px;
 }
 
 nav ul li a:hover {
@@ -248,10 +248,14 @@ li {
 .mothersDay {
 	float: left;
 	padding: 50px;
-	width: 33%;
+	width: 50%;
 	/*border: 1px solid black;*/
-	height: 550px;
+	height: 500px;
 
+}
+
+.mothersDay {
+	margin-bottom: 25px;
 }
 
 .shitMps .imgHolder,
@@ -360,9 +364,9 @@ footer a {
 }
 
 
-.outer-shape:hover{
+/*.outer-shape:hover{
 	fill: white;
-}
+}*/
 
 /****************************************************
 ************** RESPONSIVE D *************************
@@ -446,8 +450,29 @@ footer a {
 
 }
 
+@media only screen and (max-width: 540px) {
+	
+	nav ul li:first-child a {
+		padding: 2px 0;
+		font-size: 28px;
+	}
+}
+
+
 @media only screen and (max-width: 400px) {
-		
+	
+	nav ul li:first-child a {
+		padding: 8px 0;
+		font-size: 18px;
+		/*letter-spacing: 9px;*/
+	}
+
+	nav ul li:first-child a:hover {
+		letter-spacing: 8px;	
+	}
+
+
+
 	.content #home h2 {
 		font-size: 26px;
 	}

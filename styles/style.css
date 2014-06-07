@@ -81,16 +81,23 @@ nav ul li:first-child a {
 	margin-left: 5%;
 	width: 15%;
 	border: none;
-	padding: 2px 0;
-	font-size: 30px;
+	
+	padding: 0;
+	font-size: 38px;
 }
 
 nav ul li a:hover {
 	color: #2ecc71;
+	transition: color 0.4s;
 }
 
+
 nav ul li:first-child a:hover {
-	background-color: white;
+	/*background-color: white;*/
+	color: white;
+	padding-left: 5px;
+	letter-spacing: 10px;
+	transition: letter-spacing 0.3s ;
 }
 
 
@@ -229,6 +236,11 @@ li {
 
  }
 
+.work a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #56BF83;
+}
 
 .shitMps,
 .hackerWho,
@@ -237,7 +249,7 @@ li {
 	float: left;
 	padding: 50px;
 	width: 33%;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	height: 550px;
 
 }
@@ -250,7 +262,7 @@ li {
 	max-height: 205px;
 	width: 225px;
 	padding: 10px;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	margin: 0 auto;	
 }
 
@@ -347,7 +359,18 @@ footer a {
 	fill: #2ecc71;
 }
 
+
+.outer-shape:hover{
+	fill: white;
+}
+
+/****************************************************
+************** RESPONSIVE D *************************
+*****************************************************/
+
+
 @media only screen and (max-width: 920px) {
+	
 	.shitMps,
 	.hackerWho,
 	.saladClub,
@@ -355,12 +378,58 @@ footer a {
 		width: 50%;
 
 	}
+
+	.shitMps,
+	.hackerWho {
+		height: auto;
+
+	}
+
+	.saladClub,
+	.mothersDay {
+		padding-top: 0;
+	}
+
+
+	.about p{
+		margin: 0;
+		padding: 2% 8%;
+		font-size: 14px;	
+		width: 100%;
+	}
+
+	.about p + p + p {
+		padding-bottom: 75px
+	}
+
+
+}
+
+@media only screen and (max-width: 695px) {
+	
+	.content #home h2 {
+		font-size: 32px;
+	}
+
+	nav #home h2 span {
+		font-size: 50px;
+	}
+}
+
 @media only screen and (max-width: 610px) {
+	
+	nav ul li a {
+		width: 16%;
+	}
+
+
 	.shitMps,
 	.hackerWho,
 	.saladClub,
 	.mothersDay {
 		width: 100%;
+		height: auto;
+		padding-top: 0;
 
 	}
 
@@ -370,10 +439,31 @@ footer a {
 		width: 50%;
 	}
 
+	.tools {
+		padding-bottom: 75px;
+	}
+
 
 }
 
 @media only screen and (max-width: 400px) {
+		
+	.content #home h2 {
+		font-size: 26px;
+	}
+
+	nav #home h2 span {
+		font-size: 40px;
+	}
+
+
+	nav ul li a {
+		width: 16%;
+		font-size: 15px;
+	}
+	
+
+
 	.dev,
 	.design,
 	.tools {
@@ -381,9 +471,13 @@ footer a {
 		margin-top: 25px;
 	}
 
-	.tools {
-		margin-bottom: 75px;
+	.dev {
+		margin-top: 0;
 	}
+
+
+
+
 }
 
 /*

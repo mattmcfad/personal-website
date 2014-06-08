@@ -1,8 +1,7 @@
-* { 
-	-moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box; 
-}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
 
 .clearfix:after {
    content: " ";
@@ -21,7 +20,9 @@ body {
 
 h1 {
 	color: black;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+	font-size: 3.5em;
+	margin-top: 0;	
 }
 
 .about h1,
@@ -31,6 +32,7 @@ h1 {
 
 h2 {
 	color: #56BF83;
+	font-size: 2.0em;
 }
 
 ul {
@@ -122,34 +124,39 @@ nav ul a {
 .contact {
 	min-height: 500px;
 	padding: 1px; /*force sections to align*/
-	padding-top: 40px; /*sit above the nav */
+	/*padding-top: 40px;*/ /*sit above the nav */
 }
 
+section.homesplash,
+section.about,
+section.skills,
+section.work,
+section.contact {
+	padding: 100px 0;
+}
+
+
+
+/****************************************************
+ **************  HOMESPLASH  ************************
+ ****************************************************/
+
+
 .homesplash{
-	/*background-image: url(../media/cheeseburger.jpg);*/
 	background-image: url(../media/bg.jpg);
 	background-size: cover;
 }
 
-
-.skills {
-	background-image: url(../media/fabric_plaid.png);
-	background-repeat: repeat;
-}
-
 .homesplash {
-	height: 600px;
+	min-height: 600px;
 
 }
 
 .homesplash h2 {
-	padding: 5% 0;
-	/*color: rgba(55,55,55,0.9);*/
+	padding: 4% 0;
 	color: #efefef;
 	font:  46px 'Open Sans';
 	text-transform: uppercase;
-	/*background-color: rgba(255,255,255,0.5);*/
-	/*text-shadow: 1px 1px 1px rgba(255,255,255,0.5);*/
 	margin: 15%;
 	
 	font-weight: 800;	
@@ -181,23 +188,38 @@ nav ul {
 }
 
 .about a {
+	margin-top: 26.25px;
 	display: block;
-	/*font-weight: 600;*/
+	font-size: 18px;
 	color: #2ecc71;
 }
 
 
 .about p{
 	color: white;
-	width:40%;
-	margin-left: 30%;
+	width:55%;
+	margin: 15px auto;
+
 	text-align: center;
-	line-height: 1.5rem;
+	font-size: 19px;
+	line-height: 35px;
 }
 
 /*hit bottom paragraph*/
-p + p + p  {
-	margin: 25px 0 75px 0;
+.about p + p + p  {
+	/*margin-bottom: 150px;*/
+}
+
+
+/****************************************************
+ **************  SKILLS  ****************************
+ ****************************************************/
+
+
+.skills {
+	/*background-image: url(../media/fabric_plaid.png);
+	background-repeat: repeat;*/
+	background: #efefef;
 }
 
 .skills,
@@ -232,7 +254,7 @@ li {
 
  .work {
 	min-height: 400px;
-	background: url(../media/white_texture.png) repeat;
+	background: url(../media/grey3.png) repeat;
 
  }
 
@@ -255,7 +277,7 @@ li {
 }
 
 .mothersDay {
-	margin-bottom: 25px;
+	/*margin-bottom: 25px;*/
 }
 
 .shitMps .imgHolder,
@@ -281,12 +303,6 @@ li {
 
 
 
-
-
-
-
-
-
 /****************************************************
  ************** CONTACT *****************************
  ****************************************************/
@@ -308,7 +324,7 @@ textarea {
 	line-height: 2rem;
 	width: 100%;
 	font-size: 1.2rem;
-	padding: 5px;
+	padding: 5px 10px;
 	margin: 8px auto;
 
 }
@@ -324,7 +340,7 @@ textarea {
 }
 
 input + input + input { 
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
 }
 
 .contactsubmit {
@@ -334,9 +350,8 @@ input + input + input {
 	background: #2ecc71;
 	border: 0;
 	color: white;
-	margin-bottom: 100px;
+	/*margin-bottom: 100px;*/
 }
-
 
 footer {
 	height: 100px;
@@ -356,7 +371,6 @@ footer a {
 	margin: 20px 10px 0 10px;
 	width: 50px;
 	height: 50px;
-
 }
 
 .inner-shape{
@@ -458,6 +472,12 @@ footer a {
 	}
 }
 
+@media only screen and (max-width: 450px) {
+	#instagram {
+		display: none;
+	}
+}
+
 
 @media only screen and (max-width: 400px) {
 	
@@ -500,12 +520,29 @@ footer a {
 		margin-top: 0;
 	}
 
+}
 
+@media only screen and (max-width: 320px) {
 
+	nav ul li:first-child a:hover {
+		letter-spacing: 7px;	
+	}
+
+	#codepen {
+		display: none;
+	}
 
 }
 
 /*
 	small transition on hovers 0.3
+
+
+	125 padding on each section
+
+	larger font.
+	more padding and white space.
+
+	more padding on form
 */
 

@@ -1,4 +1,3 @@
-
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
@@ -93,7 +92,6 @@ nav ul li a:hover {
 	transition: color 0.4s;
 }
 
-
 nav ul li:first-child a:hover {
 	/*background-color: white;*/
 	color: white;
@@ -101,7 +99,6 @@ nav ul li:first-child a:hover {
 	letter-spacing: 10px;
 	transition: letter-spacing 0.3s ;
 }
-
 
 nav ul a {
 	padding: 10px 0;
@@ -124,7 +121,6 @@ nav ul a {
 .contact {
 	min-height: 500px;
 	padding: 1px; /*force sections to align*/
-	/*padding-top: 40px;*/ /*sit above the nav */
 }
 
 section.homesplash,
@@ -135,20 +131,17 @@ section.contact {
 	padding: 100px 0;
 }
 
-
-
 /****************************************************
  **************  HOMESPLASH  ************************
  ****************************************************/
 
-
 .homesplash{
-	background-image: url(../media/bg.jpg);
+	background-image: url(../media/bg-scaled.jpg);
 	background-size: cover;
 }
 
 .homesplash {
-	min-height: 600px;
+	height: 600px;
 
 }
 
@@ -157,8 +150,7 @@ section.contact {
 	color: #efefef;
 	font:  46px 'Open Sans';
 	text-transform: uppercase;
-	margin: 15%;
-	
+	margin: 0 15%;
 	font-weight: 800;	
 }
 
@@ -194,7 +186,6 @@ nav ul {
 	color: #2ecc71;
 }
 
-
 .about p{
 	color: white;
 	width:55%;
@@ -205,20 +196,12 @@ nav ul {
 	line-height: 35px;
 }
 
-/*hit bottom paragraph*/
-.about p + p + p  {
-	/*margin-bottom: 150px;*/
-}
-
-
 /****************************************************
  **************  SKILLS  ****************************
  ****************************************************/
 
 
 .skills {
-	/*background-image: url(../media/fabric_plaid.png);
-	background-repeat: repeat;*/
 	background: #efefef;
 }
 
@@ -234,13 +217,10 @@ li {
 	width: 33%;
 }
 
-
-
 .dev-icon,
 .design-icon,
 .tools-icon {
 	margin: 25px 0;
-
 }
 
 /*icon is left centric, push it over */
@@ -255,7 +235,6 @@ li {
  .work {
 	min-height: 400px;
 	background: url(../media/grey3.png) repeat;
-
  }
 
 .work a {
@@ -274,10 +253,6 @@ li {
 	/*border: 1px solid black;*/
 	height: 500px;
 
-}
-
-.mothersDay {
-	/*margin-bottom: 25px;*/
 }
 
 .shitMps .imgHolder,
@@ -300,8 +275,6 @@ li {
 	
 
 }
-
-
 
 /****************************************************
  ************** CONTACT *****************************
@@ -339,10 +312,6 @@ textarea {
 	maxlength: 5000;
 }
 
-input + input + input { 
-	/*margin-bottom: 20px;*/
-}
-
 .contactsubmit {
 	font-size: 1.5rem;
 	padding: 10px;
@@ -377,11 +346,6 @@ footer a {
 	fill: #2ecc71;
 }
 
-
-/*.outer-shape:hover{
-	fill: white;
-}*/
-
 /****************************************************
 ************** RESPONSIVE D *************************
 *****************************************************/
@@ -408,7 +372,6 @@ footer a {
 		padding-top: 0;
 	}
 
-
 	.about p{
 		margin: 0;
 		padding: 2% 8%;
@@ -416,15 +379,14 @@ footer a {
 		width: 100%;
 	}
 
-	.about p + p + p {
-		padding-bottom: 75px
-	}
-
-
 }
 
 @media only screen and (max-width: 695px) {
 	
+	.homesplash h2 {
+		margin: 0;
+	}
+
 	.content #home h2 {
 		font-size: 32px;
 	}
@@ -440,7 +402,6 @@ footer a {
 		width: 16%;
 	}
 
-
 	.shitMps,
 	.hackerWho,
 	.saladClub,
@@ -448,7 +409,6 @@ footer a {
 		width: 100%;
 		height: auto;
 		padding-top: 0;
-
 	}
 
 	.dev,
@@ -460,8 +420,6 @@ footer a {
 	.tools {
 		padding-bottom: 75px;
 	}
-
-
 }
 
 @media only screen and (max-width: 540px) {
@@ -470,6 +428,10 @@ footer a {
 		padding: 2px 0;
 		font-size: 28px;
 	}
+
+	.homesplash h2 span {
+		font-size: 54px;
+	}
 }
 
 @media only screen and (max-width: 450px) {
@@ -477,7 +439,6 @@ footer a {
 		display: none;
 	}
 }
-
 
 @media only screen and (max-width: 400px) {
 	
@@ -491,8 +452,6 @@ footer a {
 		letter-spacing: 8px;	
 	}
 
-
-
 	.content #home h2 {
 		font-size: 26px;
 	}
@@ -501,14 +460,11 @@ footer a {
 		font-size: 40px;
 	}
 
-
 	nav ul li a {
 		width: 16%;
 		font-size: 15px;
 	}
 	
-
-
 	.dev,
 	.design,
 	.tools {
@@ -532,17 +488,8 @@ footer a {
 		display: none;
 	}
 
+	h1 {
+		font-size: 3.1em;
+	}
+
 }
-
-/*
-	small transition on hovers 0.3
-
-
-	125 padding on each section
-
-	larger font.
-	more padding and white space.
-
-	more padding on form
-*/
-

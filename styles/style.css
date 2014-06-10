@@ -119,6 +119,12 @@ nav ul a {
 	text-align: center;
 }
 
+/*wrapper for skills and work */
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 .homesplash,
 .about,
 .skills,
@@ -393,6 +399,7 @@ footer a {
 		padding: 1% 8%;
 		font-size: 17px;	
 		width: 80%;
+		line-height: 28px;
 	}
 
 }
@@ -425,17 +432,35 @@ footer a {
 		width: 100%;
 		height: auto;
 		padding-top: 0;
+		padding: 0;
+	}
+
+	.hackerWho,
+	.saladClub,
+	.mothersDay {
+
+		margin-top: 60px;
 	}
 
 	.dev,
 	.design,
 	.tools {
-		width: 50%;
+		width: 100%;
+		
 	}
 
-	.tools {
-		padding-bottom: 75px;
+	.dev-icon,
+	.design-icon,
+	.tools-icon {
+
+		margin-bottom: 0;
 	}
+
+	.design-icon,
+	.tools-icon {
+		margin-top: 75px;
+	}
+
 }
 
 @media only screen and (max-width: 540px) {
@@ -448,6 +473,10 @@ footer a {
 	.homesplash h2 span {
 		font-size: 54px;
 	}
+
+	.about p {
+		width:100%;
+	}
 }
 
 @media only screen and (max-width: 450px) {
@@ -455,6 +484,7 @@ footer a {
 		display: none;
 	}
 }
+
 
 @media only screen and (max-width: 400px) {
 	
@@ -480,12 +510,10 @@ footer a {
 		width: 16%;
 		font-size: 15px;
 	}
-	
-	.dev,
-	.design,
-	.tools {
-		width: 100%;
-		margin-top: 25px;
+
+	.imgHolder {
+		width: 190px;
+		padding: 0;
 	}
 
 	.dev {
@@ -510,6 +538,9 @@ footer a {
 
 	h1 {
 		font-size: 3.1em;
+	}
+	.homesplash h2 span {
+		font-size: 42px;
 	}
 
 }

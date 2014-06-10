@@ -149,6 +149,7 @@ section.contact {
 .homesplash{
 	background-image: url(../media/bg-scaled.jpg);
 	background-size: cover;
+	background-position: center;
 }
 
 .homesplash {

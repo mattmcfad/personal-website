@@ -1,3 +1,8 @@
+
+
+/*Hey, just submitted my application. Hope we get the chance to talk!*/
+
+
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
@@ -172,6 +177,12 @@ nav ul {
 	position: relative;
 }
 
+.about h2 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .about img{
 	width: 200px;
 	border-radius: 100px;
@@ -241,6 +252,11 @@ li {
 	text-decoration: none;
 	font-size: 18px;
 	color: #56BF83;
+}
+
+.work p {
+	max-width: 320px;
+	margin: 0 auto 10px auto;
 }
 
 .shitMps,
@@ -373,10 +389,10 @@ footer a {
 	}
 
 	.about p{
-		margin: 0;
-		padding: 2% 8%;
-		font-size: 14px;	
-		width: 100%;
+		margin: 0 auto;
+		padding: 1% 8%;
+		font-size: 17px;	
+		width: 80%;
 	}
 
 }
@@ -482,6 +498,10 @@ footer a {
 
 	nav ul li:first-child a:hover {
 		letter-spacing: 7px;	
+	}
+
+	nav ul li a { 
+		font-size: 12px;
 	}
 
 	#codepen {

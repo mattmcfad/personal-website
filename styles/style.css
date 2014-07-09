@@ -199,6 +199,7 @@ nav ul {
 
 .about a {
 	margin-top: 26.25px;
+	text-decoration: none;
 	display: block;
 	font-size: 18px;
 	color: #2ecc71;
@@ -266,10 +267,37 @@ li {
 	margin: 0 auto 10px auto;
 }
 
-.shitMps,
+/*.shitMps,
 .hackerWho,
 .saladClub,
 .mothersDay {
+	float: left;
+	padding: 50px;
+	width: 50%;
+
+	height: 500px;
+
+}*/
+/*.shitMps .imgHolder,
+.hackerWho .imgHolder,
+.saladClub .imgHolder,
+.mothersDay .imgHolder {
+	min-height: 205px;
+	max-height: 205px;
+	width: 225px;
+	padding: 10px;
+	margin: 0 auto;	
+}
+*/
+/*
+.shitMps img,
+.hackerWho img,
+.saladClub img,
+.mothersDay img {
+	width: 100%;
+}*/
+
+.workItem {
 	float: left;
 	padding: 50px;
 	width: 50%;
@@ -278,26 +306,19 @@ li {
 
 }
 
-.shitMps .imgHolder,
-.hackerWho .imgHolder,
-.saladClub .imgHolder,
-.mothersDay .imgHolder {
+.workItem .imgHolder {
 	min-height: 205px;
 	max-height: 205px;
 	width: 225px;
 	padding: 10px;
-	/*border: 1px solid black;*/
 	margin: 0 auto;	
 }
 
-.shitMps img,
-.hackerWho img,
-.saladClub img,
-.mothersDay img {
+.workItem img {
 	width: 100%;
-	
-
+	border: 1px solid #000;
 }
+
 
 /****************************************************
  ************** CONTACT *****************************
@@ -329,7 +350,7 @@ textarea {
 	color: white;
 }
 
-textarea {
+textarea {x
 	height: 200px;
 	resize: none;
 	maxlength: 5000;

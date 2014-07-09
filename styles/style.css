@@ -267,35 +267,6 @@ li {
 	margin: 0 auto 10px auto;
 }
 
-/*.shitMps,
-.hackerWho,
-.saladClub,
-.mothersDay {
-	float: left;
-	padding: 50px;
-	width: 50%;
-
-	height: 500px;
-
-}*/
-/*.shitMps .imgHolder,
-.hackerWho .imgHolder,
-.saladClub .imgHolder,
-.mothersDay .imgHolder {
-	min-height: 205px;
-	max-height: 205px;
-	width: 225px;
-	padding: 10px;
-	margin: 0 auto;	
-}
-*/
-/*
-.shitMps img,
-.hackerWho img,
-.saladClub img,
-.mothersDay img {
-	width: 100%;
-}*/
 
 .workItem {
 	float: left;
@@ -307,7 +278,7 @@ li {
 }
 
 .workItem .imgHolder {
-	min-height: 205px;
+	min-height: 185px;
 	max-height: 205px;
 	width: 225px;
 	padding: 10px;
@@ -319,6 +290,10 @@ li {
 	border: 1px solid #000;
 }
 
+.cosella .imgHolder,
+.solomon .imgHolder{
+	margin-bottom: 15px;
+}
 
 /****************************************************
  ************** CONTACT *****************************
@@ -397,22 +372,21 @@ footer a {
 
 @media only screen and (max-width: 920px) {
 	
-	.shitMps,
-	.hackerWho,
-	.saladClub,
-	.mothersDay {
+	.workItem {
 		width: 50%;
 
 	}
 
-	.shitMps,
-	.hackerWho {
+	.cosella,
+	.solomon {
 		height: auto;
 
 	}
 
 	.saladClub,
-	.mothersDay {
+	.mothersDay,
+	.shitMps,
+	.hackerWho {
 		padding-top: 0;
 	}
 
@@ -447,19 +421,14 @@ footer a {
 		width: 16%;
 	}
 
-	.shitMps,
-	.hackerWho,
-	.saladClub,
-	.mothersDay {
+	.workItem {
 		width: 100%;
 		height: auto;
 		padding-top: 0;
 		padding: 0;
 	}
 
-	.hackerWho,
-	.saladClub,
-	.mothersDay {
+	.workItem{
 
 		margin-top: 60px;
 	}
